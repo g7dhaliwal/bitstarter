@@ -25,7 +25,7 @@ app.use(express.logger());
 app.get('/', function(request, response) {
  // var out = fs.buffer;
   //out.toString('utf-8');
-  response.send(data);
+  response.write(data);
 });
 
 var port = process.env.PORT || 5000;
